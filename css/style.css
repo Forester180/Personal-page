@@ -1,0 +1,1179 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+
+button {
+  font-family: Sen;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background: linear-gradient(90deg, #000 40%, #181823 40% 100%);
+}
+
+.nav {
+  padding-right: 72px;
+  padding-left: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper_burger,
+.nav_burger {
+  display: none;
+}
+
+.nav_list {
+  display: flex;
+}
+
+.nav_item {
+  padding: 32px 24px;
+}
+
+.nav_item--active {
+  background-color: #5221e6;
+}
+
+.nav_link {
+  color: #fff;
+  font-size: 16px;
+}
+
+.info_wrapper {
+  position: relative;
+  margin-right: 42px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.man_foto,
+.thought_img,
+.card_img,
+.instagram_img,
+.drible_img,
+.photograhy_img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.man_foto-desktop,
+.man_foto-mobile,
+.thought_img-desktop,
+.thought_img-mobile,
+.card_img-desktop,
+.card_img-mobile,
+.instagram_img-desktop,
+.drible_img-desktop,
+.drible_img-mobile,
+.opinion_card-img-desktop,
+.opinion_card-img-mobile,
+.photograhy_img-desktop,
+.photograhy_img-mobile,
+.nav_text {
+  display: none;
+}
+
+.nav_info-title {
+  font-size: 32px;
+font-weight: 700;
+}
+
+.work {
+  padding: 120px 0 145px;
+  background-color: #000;
+}
+
+.work_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.work_paragraph {
+  font-size: 16px;
+  font-weight: 700;
+  color: #8491a0;
+}
+
+.work_title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  max-width: 690px;
+}
+
+.work_list {
+  display: flex;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+.work_item {
+  display: flex;
+  flex-direction: column;
+  max-width: 415px;
+}
+
+.work_item-number {
+  font-size: 117px;
+  color: #8491a0;
+}
+
+.work_item-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.work_item-subtitle {
+  font-size: 16px;
+  color: #8491a0;
+}
+
+#green {
+  color: #3cc74e;
+}
+
+#blue {
+  color: #609bff;
+}
+
+#pink {
+  color: #e95d90;
+}
+
+.thought,
+.instagram {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.thought_text,
+.instagram_text {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff3e4;
+  padding: 120px 59px;
+}
+
+.thought_title,
+.instagram_title {
+  color: #181823;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.thought_subtitle,
+.instagram_subtitle {
+  color: #5b6876;
+  margin-top: 25px;
+  margin-bottom: 135px;
+}
+
+.thought_link,
+.instagram_link {
+  text-transform: initial;
+  font-size: 16px;
+  color: #181823;
+}
+
+.thought_link hr {
+  width: 116px;
+  height: 1px;
+  color: #8491a0;
+  margin-top: 5px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+
+.skills_wrapper {
+  display: flex;
+  padding: 120px 70px;
+}
+
+.skills_description {
+  display: flex;
+  flex-direction: column;
+  max-width: 416px;
+  margin-bottom: 48px;
+}
+
+.skills_title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.skills_subtitle {
+  color: #8491a0;
+  width: 368px;
+}
+
+.my-skills_item {
+  display: grid;
+  grid-template-columns: 416px 416px;
+  column-gap: 12px;
+  row-gap: 24px;
+}
+
+.my-skills_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.my-skills_subtitle {
+  font-size: 16px;
+  width: 368px;
+}
+
+.company_wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+
+.company_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.company_list {
+  border: 1px solid #181823;
+  width: 320px;
+}
+
+.company_list-desktop {
+  display: none;
+  border: 1px solid #181823;
+  width: 320px;
+}
+
+.company_img {
+  display: flex;
+  justify-content: baseline;
+  margin: 55px auto;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #000;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.column-one {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}
+
+.column-one_text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.column-one_title {
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 80px;
+  width: 575px;
+}
+
+.project_card {
+  display: flex;
+  flex-direction: column;
+  max-width: 636px;
+  background-color: #181823;
+}
+
+.project_card-first {
+  margin-bottom: 25px;
+}
+
+.card_text {
+  margin: 40px 32px;
+}
+
+.card_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project_wrapper-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.project_link {
+  font-weight: 700;
+  color: #fff;
+  padding: 24px 32px;
+  border: 1px solid #5221e6;
+  transition: 0.6s;
+}
+
+.project_link:hover {
+  background-color: #0a0a0e;
+  transform: scale(0.99);
+  transition: 0.6s;
+}
+
+.instagram_text {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbe4ff;
+  padding: 120px 59px;
+}
+
+.instagram_link hr {
+  width: 125px;
+  height: 1px;
+  color: #8491a0;
+  margin-top: 5px;
+}
+
+.drible,
+.opinion,
+.photograhy,
+.connection {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+
+.drible_wrapper,
+.opinion_wrapper,
+.connection_wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.drible_title,
+.opinion_title,
+.photograhy_title,
+.connection_title {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.drible_subtitle {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  max-width: 636px;
+}
+
+.drible_link {
+  text-transform: none;
+}
+
+.drible_link,
+.opinion_link {
+  font-size: 16px;
+  color: #fff;
+}
+
+.drible_link hr {
+  width: 171px;
+  height: 1px;
+  color: #8491a0;
+  margin-top: 5px;
+}
+
+.drible_img-wrapper {
+  margin-top: 120px;
+}
+
+.drible_balls-wrapper {
+  display: flex;
+  border-radius: 8px 8px 0px 0px;
+  background-color: #181823;
+}
+
+.drible_img-balls {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+}
+
+.opinion_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.opinion_text {
+  color: #fff;
+  width: 590px;
+  margin-right: 70px;
+}
+
+.opinion_card {
+  max-width: 636px;
+}
+
+.opinion_subtitle {
+  color: #8491a0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.opinion_link hr {
+  width: 188px;
+  height: 1px;
+  color: #8491a0;
+  margin-top: 5px;
+}
+
+.opinion_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.opinion_card {
+  border: 1px solid #5b6876;
+}
+
+.opinion_card-text {
+  margin: 65px;
+}
+
+.opinion_card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 65px;
+}
+
+.opinion_card-textName,
+.opinion_card-textCompany {
+  color: #5b6876;
+}
+
+.opinion_card-textName {
+  font-weight: 700;
+}
+
+.opinion_card-textCompany {
+  font-weight: 400;
+}
+
+
+.photograhy_wrapper {
+  padding: 120px 29px;
+}
+
+.photograhy_subtitle {
+  color: #8491a0;
+  max-width: 590px;
+  margin-top: 25px;
+  margin-bottom: 65px;
+}
+
+.photograhy_button-wrapper {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.photograhy_btn {
+  padding: 12px 16px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #5221e6;
+  transition: 0.6s;
+}
+
+.photograhy_btn:hover {
+  background-color: #161616;
+  transform: scale(0.99);
+  transition: 0.6s;
+}
+
+.photograhy_btn--active {
+  background-color: #5221e6;
+}
+
+.photograhy_italy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.connection_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.connection_text {
+  max-width: 530px;
+}
+
+.connection_subtitle {
+  color: #8491a0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.connection_form {
+  max-width: 530px;
+}
+
+.form_list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_item-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form_item-input {
+  background-color: #181823;
+  border: none;
+  width: 530px;
+  height: 50px;
+}
+
+.form_item-message {
+  background-color: #181823;
+  border: none;
+  width: 530px;
+  height: 100px;
+}
+
+.form_btn {
+  padding: 24px 32px;
+  background-color: #5221e6;
+  color: #fff;
+  transition: 0.6s;
+  border: none;
+}
+
+.form_btn:hover {
+  background-color: #5a2ae8;
+  transform: scale(0.99);
+  transition: 0.6s;
+}
+
+.footer {
+  background-color: #181823;
+}
+
+.footer_wrapper {
+  padding: 80px 0 80px 70px;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo-wrapper {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.footer_link-wrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 46px;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: start;
+  width: 195px;
+  height: 50px;
+}
+
+.footer_link {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.footer_text {
+  font-size: 16px;
+  color: #8491a0;
+}
+
+@media (max-width: 1296px) {
+  .column-one {
+    margin-bottom: 40px;
+    margin-right: 5px;
+  }
+
+  .project_card-first {
+    margin-bottom: 40px;
+  }
+
+  .opinion_cards {
+    gap: 60px;
+  }
+
+.opinion_card {
+  width: 332px;
+}
+
+  .opinion_card-img{
+    display: none;
+  }
+
+  .opinion_card-img-desktop {
+    display: block;
+  }
+}
+
+@media (max-width: 1271px) {
+  .column-one {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1215px) {
+  .skills_wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1050px) {
+.opinion_text {
+  width: 400px;
+}
+}
+
+@media (max-width: 959px) {
+  .company_list-desktop {
+    display: block;
+  }
+}
+
+@media (max-width: 910px) {
+  .my-skills_item {
+    display: grid;
+    grid-template-columns: 332px 332px;
+    column-gap: 12px;
+    row-gap: 48px;
+  }
+
+  .my-skills_subtitle {
+    font-size: 16px;
+    width: 284px;
+  }
+
+  .opinion_wrapper {
+    flex-direction: column;
+  }
+
+  .opinion_text {
+    margin-right: 0;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+.man_foto,
+.thought_img,
+.card_img,
+.instagram_img,
+.drible_img,
+.photograhy_img{
+    display: none;
+  }
+
+  .man_foto-desktop,
+  .thought_img-desktop,
+  .card_img-desktop,
+  .instagram_img-desktop,
+  .drible_img-desktop,
+  .photograhy_img-desktop {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  header {
+    background: #000;
+  }
+
+  .nav_item {
+    padding: 28px 16px;
+  }
+
+  .nav_link {
+    font-size: 14px;
+  }
+
+  .work_item-title {
+    width: 195px;
+  }
+
+  .thought_text {
+    padding: 80px 40px 60px 40px;
+  }
+
+  .thought_link hr {
+    width: 117px;
+  }
+
+  .projects {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .project_wrapper-link {
+    display: none;
+  }
+
+  .instagram_text {
+    padding: 80px 40px;
+  }
+
+  .drible_wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .opinion_wrapper {
+    padding-top: 80px;
+  }
+
+  .photograhy_wrapper {
+    padding: 80px 40px;
+  }
+
+  .connection_wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .footer_wrapper {
+    padding-bottom: 55px;
+  }
+
+  .footer_text {
+    width: 330px;
+  }
+}
+
+@media (max-width: 700px) {
+  .work_list {
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+
+  .work_item {
+    width: 320px;
+  }
+  
+  .work_item-title {
+    width: 230px;
+    margin-bottom: 16px;
+  }
+
+  .thought {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .thought_img-desktop {
+    width: 100vw;
+  }
+
+ .skills_wrapper {
+  display: block;
+  padding: 80px 40px;
+ }
+
+ .my-skills_item {
+    display: grid;
+    grid-template-columns: 332px;
+    row-gap: 24px;
+ }
+
+  .instagram {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instagram_img-desktop {
+    width: 100vw;
+  }
+
+  .drible_wrapper {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 668px) {
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px;
+  }
+  
+  .footer_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_logo {
+    margin-bottom: 48px;
+  }
+
+  .footer_text {
+    text-align: center;
+  }
+  .nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .nav_item {
+    padding: 16px 8px;
+  }
+  
+  .nav_link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 636px) {
+  .column-one,
+  .column-two {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .photograhy_subtitle {
+    width: 320px;
+    margin: 25px auto 65px;
+  }
+
+  .photograhy_title,
+  .photograhy_subtitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .photograhy_button-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 574px) {
+  .nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .skills_wrapper {
+    padding: 65px 0;
+    margin: 0 auto;
+  }
+
+  .column-one_title {
+    width: 100%;
+  }
+
+  .connection_wrapper {
+    padding: 48px;
+    padding: 48px;
+  }
+
+  .connection_text,
+  .form_item-input,
+  .form_item-message {
+    width: 440px;
+  }
+
+  .connection_title {
+    font-size: 32px;
+  }
+
+  .connection_subtitle {
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+
+  .form_list {
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer_link-wrapper {
+    flex-direction: column;
+  }
+
+  .work {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .work_text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .work_title {
+    font-size: 32px;
+  }
+
+  .thought_text,
+  .instagram_text {
+    padding: 48px 20px;
+  }
+
+  .thought_title,
+  .column-one_title,
+  .instagram_title,
+  .drible_title,
+  .opinion_title,
+  .photograhy_title {
+    font-size: 32px;
+  }
+
+  .thought_subtitle {
+    margin-bottom: 90px;
+  }
+
+  .instagram_subtitle {
+    margin-top: 16px;
+    margin-bottom: 125px;
+  }
+
+  .drible_wrapper {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .drible_img-wrapper {
+    margin-top: 65px;
+  }
+
+  .opinion_wrapper {
+    margin: 0 auto;
+    padding-top: 48px;
+    padding: 48px;
+  }
+
+  .opinion_text {
+    width: 320px;
+  }
+
+  .opinion_card-text {
+    margin: 32px;
+  }
+
+  .opinion_cards {
+    gap: 48px;
+  }
+
+  .photograhy_wrapper {
+    padding: 48px 20px;
+  }
+
+  .photograhy_subtitle {
+    margin-bottom: 40px;
+  }
+
+  .photograhy_italy {
+    gap: 24px;
+  }
+
+  .connection_text,
+  .form_item-input,
+  .form_item-message {
+    width: 320px;
+  }
+}
+
+@media (max-width: 447px) {
+  .wrapper_burger {
+    border: none;
+  }
+
+  .wrapper_burger,
+  .nav_burger {
+    display: block;
+  }
+
+  .nav_links {
+    top: -200vh;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .nav_links.active {
+    background-color: rgba(53, 53, 52, 0.897);
+    top: 64px;
+    left: 0px;
+    width: 100%;
+    padding-bottom: 38vh;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  .nav_list {
+    flex-direction: column;
+  }
+
+  .photograhy_btn {
+    width: 150px;
+  }
+}
+
+@media (max-width: 390px) {
+  .opinion_text {
+    margin: 0 20px;
+    margin-bottom: 64px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .man_foto-desktop,
+  .thought_img-desktop,
+  .card_img-desktop,
+  .drible_img-desktop,
+  .opinion_card-img-desktop,
+  .photograhy_img-desktop {
+    display: none;
+  }
+
+  .man_foto-mobile,
+  .thought_img-mobile,
+  .card_img-mobile,
+  .drible_img-mobile,
+  .photograhy_img-mobile {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .opinion_card-img-mobile {
+    display: block;
+  }
+
+  .info_wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav_text {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 20px;
+}
+
+  .nav_info-title {
+    margin-bottom: 16px;
+  }
+  
+  .nav_info-title span {
+    color: #8491A0;
+  }
+
+  .skills_description {
+    margin-bottom: 70px;
+  }
+
+  .skills_title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .skills_subtitle {
+    width: 330px;
+  }
+
+  .my-skills_item {
+    margin-bottom: 48px;
+  }
+
+  .my-skills_subtitle {
+    width: 320px;
+  }
+
+  .company_list,
+  .company_list-desktop {
+    width: 180px;
+  }
+
+  .projects {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  
+.column-one {
+  margin-bottom: 18px;
+}
+
+  .project_card-first {
+    margin-bottom: 18px;
+  }
+
+  .footer_wrapper, 
+  .footer_text {
+    align-items: start;
+  }
+}
+
